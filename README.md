@@ -1,4 +1,4 @@
-# Hypervisor Switcher 🔄
+# Hypervisor Toggler 🔄
 
 Interactive Linux utility for seamlessly switching between KVM and VirtualBox hypervisors with automatic conflict resolution.
 
@@ -55,33 +55,33 @@ Tested on:
 ### Quick Install
 ```bash
 # Download the script
-curl -O https://raw.githubusercontent.com/yourusername/hypervisor-switcher/main/hypervisor-switch.sh
+curl -O https://raw.githubusercontent.com/yourusername/kvm-vbox-toggler/main/hypervisor-toggler.sh
 
 # Make executable
-chmod +x hypervisor-switch.sh
+chmod +x hypervisor-toggler.sh
 
 # Run
-sudo ./hypervisor-switch.sh
+sudo ./hypervisor-toggler.sh
 ```
 
 ### Clone Repository
 ```bash
-git clone https://github.com/yourusername/hypervisor-switcher.git
-cd hypervisor-switcher
-chmod +x hypervisor-switch.sh
-sudo ./hypervisor-switch.sh
+git clone https://github.com/yourusername/kvm-vbox-toggler.git
+cd kvm-vbox-toggler
+chmod +x hypervisor-toggler.sh
+sudo ./hypervisor-toggler.sh
 ```
 
 ## Usage
 
 ### Basic Usage
 ```bash
-sudo ./hypervisor-switch.sh
+sudo ./hypervisor-toggler.sh
 ```
 
 ### Example Session
 ```
-=== Interactive Hypervisor Switcher ===
+=== Interactive Hypervisor Toggler ===
 ============================================
 
 === Current Hypervisor Status ===
@@ -92,7 +92,7 @@ CPU Vendor: INTEL
   - kvm module loaded
 [WARNING] VirtualBox is currently INACTIVE
 
-=== Hypervisor Switcher Menu ===
+=== Hypervisor Toggler Menu ===
 
 1) Switch to VirtualBox
 2) Refresh status
@@ -103,7 +103,7 @@ Select an option: 1
 [INFO] Switching to VirtualBox hypervisor...
 [INFO] Unloading KVM modules...
 [INFO] Loading VirtualBox modules...
-[SUCCESS] Successfully switched to VirtualBox!
+[SUCCESS] Successfully toggled to VirtualBox!
 [INFO] You can now use VirtualBox VMs
 ```
 
@@ -113,7 +113,7 @@ Select an option: 1
 2. **CPU Identification**: Detects Intel or AMD CPU to load appropriate modules
 3. **VM Detection**: Scans for running VMs that need to be stopped
 4. **Module Management**: Safely unloads old modules and loads new ones
-5. **Verification**: Confirms the switch was successful
+5. **Verification**: Confirms the toggl was successful
 
 ### Kernel Modules Managed
 
@@ -161,12 +161,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### Development Setup
 ```bash
-git clone https://github.com/yourusername/hypervisor-switcher.git
-cd hypervisor-switcher
+git clone https://github.com/yourusername/kvm-vbox-toggler.git
+cd kvm-vbox-toggler
 
 # Test the script
 sudo bash -n hypervisor-switch.sh  # Syntax check
-sudo ./hypervisor-switch.sh        # Run
+sudo ./hypervisor-toggler.sh        # Run
 ```
 
 ### Guidelines
@@ -194,8 +194,8 @@ This project is licensed under the BSD-2-Clause License - see the [LICENSE](LICE
 
 If you encounter issues:
 
-1. Check the [Issues](https://github.com/yourusername/hypervisor-switcher/issues) page
-2. Run the script with bash debug: `sudo bash -x ./hypervisor-switch.sh`
+1. Check the [Issues](https://github.com/yourusername/kvm-vbox-toggler/issues) page
+2. Run the script with bash debug: `sudo bash -x ./hypervisor-toggler.sh`
 3. Include your Linux distribution and kernel version in bug reports
 4. Provide the output of `lsmod | grep -E 'kvm|vbox'`
 
