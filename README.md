@@ -26,13 +26,13 @@ This script provides an interactive way to switch between hypervisors by:
 
 ## Features
 
-- 🎯 **Smart Detection**: Automatically detects current hypervisor status and CPU vendor
-- 🔄 **Safe Switching**: Handles module loading/unloading with proper error checking
-- 🛑 **VM Management**: Detects and helps stop running VMs before switching
-- 🎨 **Color Output**: Clear, color-coded status messages
-- ⚡ **Interactive Menu**: Context-aware menu system
-- 🛡️ **Conflict Resolution**: Handles edge cases where both hypervisors are loaded
-- 🔍 **Status Verification**: Confirms successful switches
+-  **Smart Detection**: Automatically detects current hypervisor status and CPU vendor
+-  **Safe Switching**: Handles module loading/unloading with proper error checking
+-  **VM Management**: Detects and helps stop running VMs before switching
+-  **Color Output**: Clear, color-coded status messages
+-  **Interactive Menu**: Context-aware menu system
+-  **Conflict Resolution**: Handles edge cases where both hypervisors are loaded
+-  **Status Verification**: Confirms successful switches
 
 ## Requirements
 
@@ -55,7 +55,7 @@ Tested on:
 ### Quick Install
 ```bash
 # Download the script
-curl -O https://raw.githubusercontent.com/yourusername/kvm-vbox-toggler/main/hypervisor-toggler.sh
+curl -O https://raw.githubusercontent.com/imosudi/kvm-vbox-toggler/main/hypervisor-toggler.sh
 
 # Make executable
 chmod +x hypervisor-toggler.sh
@@ -66,7 +66,7 @@ sudo ./hypervisor-toggler.sh
 
 ### Clone Repository
 ```bash
-git clone https://github.com/yourusername/kvm-vbox-toggler.git
+git clone https://github.com/imosudi/kvm-vbox-toggler.git
 cd kvm-vbox-toggler
 chmod +x hypervisor-toggler.sh
 sudo ./hypervisor-toggler.sh
@@ -161,7 +161,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ### Development Setup
 ```bash
-git clone https://github.com/yourusername/kvm-vbox-toggler.git
+git clone https://github.com/imosudi/kvm-vbox-toggler.git
 cd kvm-vbox-toggler
 
 # Test the script
@@ -194,7 +194,7 @@ This project is licensed under the BSD-2-Clause License - see the [LICENSE](LICE
 
 If you encounter issues:
 
-1. Check the [Issues](https://github.com/yourusername/kvm-vbox-toggler/issues) page
+1. Check the [Issues](https://github.com/imosudi/kvm-vbox-toggler/issues) page
 2. Run the script with bash debug: `sudo bash -x ./hypervisor-toggler.sh`
 3. Include your Linux distribution and kernel version in bug reports
 4. Provide the output of `lsmod | grep -E 'kvm|vbox'`
