@@ -92,13 +92,15 @@ CPU Vendor: INTEL
   - kvm module loaded
 [WARNING] VirtualBox is currently INACTIVE
 
-=== Hypervisor Toggler Menu ===
+==========================
+ Hypervisor Toggler Menu
+==========================
+1) Switch to KVM
+2) Switch to VirtualBox
+3) Show Current Status
+4) Exit
 
-1) Switch to VirtualBox
-2) Refresh status
-3) Exit
-
-Select an option: 1
+Choose an option [1-4]: 1
 
 [INFO] Switching to VirtualBox hypervisor...
 [INFO] Unloading KVM modules...

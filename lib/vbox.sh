@@ -14,5 +14,8 @@ switch_to_vbox() {
     modprobe vboxnetadp 2>/dev/null || true
     modprobe vboxpci    2>/dev/null || true
 
-    print_success "VirtualBox active!"
+    print_status "Loading VirtualBox modules..."
+    print_success "Toggled to VirtualBox!"
+    print_success "VirtualBox is nowactive!"
+    print_status "You can now use VirtualBox VMs"
 }
